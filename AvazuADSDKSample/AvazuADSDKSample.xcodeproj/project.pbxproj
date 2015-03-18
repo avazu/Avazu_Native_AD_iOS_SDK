@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480C6C311AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480C6C2F1AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib */; };
+		4856549D1AB7FB1500F71876 /* libAvazuAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */; };
+		4856549F1AB807AB00F71876 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4856549E1AB807AB00F71876 /* Launch Screen.xib */; };
+		485654A11AB807B400F71876 /* PublisherDemo-AdSizes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485654A01AB807B400F71876 /* PublisherDemo-AdSizes.plist */; };
+		488B02F11AA99EEC005C78B8 /* game_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EB1AA99EEC005C78B8 /* game_back.jpg */; };
+		488B02F21AA99EEC005C78B8 /* image_down1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EC1AA99EEC005C78B8 /* image_down1.jpg */; };
+		488B02F31AA99EEC005C78B8 /* image_down2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02ED1AA99EEC005C78B8 /* image_down2.jpg */; };
+		488B02F41AA99EEC005C78B8 /* image_left1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EE1AA99EEC005C78B8 /* image_left1.jpg */; };
+		488B02F51AA99EEC005C78B8 /* image_up1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EF1AA99EEC005C78B8 /* image_up1.jpg */; };
+		488B02F61AA99EEC005C78B8 /* image_up2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02F01AA99EEC005C78B8 /* image_up2.jpg */; };
+		4890B8C11AA6A7EB000304DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B8C01AA6A7EB000304DA /* main.m */; };
+		4890B8DB1AA6A7EB000304DA /* AvazuADSDKSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B8DA1AA6A7EB000304DA /* AvazuADSDKSampleTests.m */; };
+		4890B9361AA6F92C000304DA /* AvazuSampleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */; };
+		4890B9371AA6F92C000304DA /* AvazuSampleMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */; };
+		4890B9451AA6F98C000304DA /* TADetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4890B93E1AA6F98C000304DA /* TADetailViewController_iPhone.xib */; };
+		4890B9481AA6FBCA000304DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B9301AA6F92C000304DA /* AppDelegate.m */; };
+		48B3E07B1AAEE419006780ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0781AAEE3B7006780ED /* UIKit.framework */; };
+		48B3E07C1AAEE41B006780ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0761AAEE3AE006780ED /* Foundation.framework */; };
+		48B3E07D1AAEE41D006780ED /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48503BEB1AA843A200C7C48D /* AdSupport.framework */; };
+		48B3E0841AAFF905006780ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0831AAFF905006780ED /* CoreTelephony.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4890B8D51AA6A7EB000304DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4890B8B31AA6A7EB000304DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4890B8BA1AA6A7EB000304DA;
+			remoteInfo = AvazuADSDKSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		480C6C301AB54E7D009FEBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AvazuADSDKSample/Base.lproj/TAMasterViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		48503BE51AA8087700C7C48D /* AvazuADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuADView.h; sourceTree = "<group>"; };
+		48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAvazuAdSDK.a; sourceTree = "<group>"; };
+		48503BEB1AA843A200C7C48D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		4856549E1AB807AB00F71876 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
+		485654A01AB807B400F71876 /* PublisherDemo-AdSizes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PublisherDemo-AdSizes.plist"; sourceTree = "<group>"; };
+		488B02EB1AA99EEC005C78B8 /* game_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = game_back.jpg; sourceTree = "<group>"; };
+		488B02EC1AA99EEC005C78B8 /* image_down1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_down1.jpg; sourceTree = "<group>"; };
+		488B02ED1AA99EEC005C78B8 /* image_down2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_down2.jpg; sourceTree = "<group>"; };
+		488B02EE1AA99EEC005C78B8 /* image_left1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_left1.jpg; sourceTree = "<group>"; };
+		488B02EF1AA99EEC005C78B8 /* image_up1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_up1.jpg; sourceTree = "<group>"; };
+		488B02F01AA99EEC005C78B8 /* image_up2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_up2.jpg; sourceTree = "<group>"; };
+		4890B8BB1AA6A7EB000304DA /* AvazuADSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvazuADSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4890B8BF1AA6A7EB000304DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4890B8C01AA6A7EB000304DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4890B8D41AA6A7EB000304DA /* AvazuADSDKSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvazuADSDKSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4890B8D91AA6A7EB000304DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4890B8DA1AA6A7EB000304DA /* AvazuADSDKSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvazuADSDKSampleTests.m; sourceTree = "<group>"; };
+		4890B92F1AA6F92C000304DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4890B9301AA6F92C000304DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4890B9311AA6F92C000304DA /* AvazuSampleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuSampleDetailViewController.h; sourceTree = "<group>"; };
+		4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuSampleDetailViewController.m; sourceTree = "<group>"; };
+		4890B9331AA6F92C000304DA /* AvazuSampleMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuSampleMasterViewController.h; sourceTree = "<group>"; };
+		4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuSampleMasterViewController.m; sourceTree = "<group>"; };
+		4890B93F1AA6F98C000304DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TADetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		48B3E0761AAEE3AE006780ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		48B3E0781AAEE3B7006780ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		48B3E0831AAFF905006780ED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4890B8B81AA6A7EB000304DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4856549D1AB7FB1500F71876 /* libAvazuAdSDK.a in Frameworks */,
+				48B3E0841AAFF905006780ED /* CoreTelephony.framework in Frameworks */,
+				48B3E07B1AAEE419006780ED /* UIKit.framework in Frameworks */,
+				48B3E07C1AAEE41B006780ED /* Foundation.framework in Frameworks */,
+				48B3E07D1AAEE41D006780ED /* AdSupport.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4890B8D11AA6A7EB000304DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48503BE21AA8087700C7C48D /* AvazuAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				48503BE31AA8087700C7C48D /* include */,
+				48503BE71AA8087700C7C48D /* lib */,
+			);
+			name = AvazuAdSDK;
+			path = ../../AvazuAdSDK;
+			sourceTree = "<group>";
+		};
+		48503BE31AA8087700C7C48D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				48503BE51AA8087700C7C48D /* AvazuADView.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		48503BE71AA8087700C7C48D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		488B02EA1AA99EEC005C78B8 /* pic */ = {
+			isa = PBXGroup;
+			children = (
+				488B02EB1AA99EEC005C78B8 /* game_back.jpg */,
+				488B02EC1AA99EEC005C78B8 /* image_down1.jpg */,
+				488B02ED1AA99EEC005C78B8 /* image_down2.jpg */,
+				488B02EE1AA99EEC005C78B8 /* image_left1.jpg */,
+				488B02EF1AA99EEC005C78B8 /* image_up1.jpg */,
+				488B02F01AA99EEC005C78B8 /* image_up2.jpg */,
+			);
+			path = pic;
+			sourceTree = SOURCE_ROOT;
+		};
+		4890B8B21AA6A7EB000304DA = {
+			isa = PBXGroup;
+			children = (
+				4890B8BD1AA6A7EB000304DA /* AvazuADSDKSample */,
+				4890B8D71AA6A7EB000304DA /* AvazuADSDKSampleTests */,
+				48B3E07A1AAEE3CB006780ED /* Frameworks */,
+				4890B8BC1AA6A7EB000304DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4890B8BC1AA6A7EB000304DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4890B8BB1AA6A7EB000304DA /* AvazuADSDKSample.app */,
+				4890B8D41AA6A7EB000304DA /* AvazuADSDKSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4890B8BD1AA6A7EB000304DA /* AvazuADSDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				488B02EA1AA99EEC005C78B8 /* pic */,
+				4890B92F1AA6F92C000304DA /* AppDelegate.h */,
+				4890B9301AA6F92C000304DA /* AppDelegate.m */,
+				48503BE21AA8087700C7C48D /* AvazuAdSDK */,
+				4890B9311AA6F92C000304DA /* AvazuSampleDetailViewController.h */,
+				4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */,
+				4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */,
+				4890B9331AA6F92C000304DA /* AvazuSampleMasterViewController.h */,
+				4890B93E1AA6F98C000304DA /* TADetailViewController_iPhone.xib */,
+				480C6C2F1AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib */,
+				485654A01AB807B400F71876 /* PublisherDemo-AdSizes.plist */,
+				4890B8BE1AA6A7EB000304DA /* Supporting Files */,
+			);
+			path = AvazuADSDKSample;
+			sourceTree = "<group>";
+		};
+		4890B8BE1AA6A7EB000304DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4856549E1AB807AB00F71876 /* Launch Screen.xib */,
+				4890B8BF1AA6A7EB000304DA /* Info.plist */,
+				4890B8C01AA6A7EB000304DA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4890B8D71AA6A7EB000304DA /* AvazuADSDKSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4890B8DA1AA6A7EB000304DA /* AvazuADSDKSampleTests.m */,
+				4890B8D81AA6A7EB000304DA /* Supporting Files */,
+			);
+			path = AvazuADSDKSampleTests;
+			sourceTree = "<group>";
+		};
+		4890B8D81AA6A7EB000304DA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4890B8D91AA6A7EB000304DA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		48B3E07A1AAEE3CB006780ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48B3E0831AAFF905006780ED /* CoreTelephony.framework */,
+				48B3E0781AAEE3B7006780ED /* UIKit.framework */,
+				48B3E0761AAEE3AE006780ED /* Foundation.framework */,
+				48503BEB1AA843A200C7C48D /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			path = AvazuADSDKSample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4890B8BA1AA6A7EB000304DA /* AvazuADSDKSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4890B8DE1AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSample" */;
+			buildPhases = (
+				4890B8B71AA6A7EB000304DA /* Sources */,
+				4890B8B81AA6A7EB000304DA /* Frameworks */,
+				4890B8B91AA6A7EB000304DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AvazuADSDKSample;
+			productName = AvazuADSDKSample;
+			productReference = 4890B8BB1AA6A7EB000304DA /* AvazuADSDKSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4890B8D31AA6A7EB000304DA /* AvazuADSDKSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4890B8E11AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSampleTests" */;
+			buildPhases = (
+				4890B8D01AA6A7EB000304DA /* Sources */,
+				4890B8D11AA6A7EB000304DA /* Frameworks */,
+				4890B8D21AA6A7EB000304DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4890B8D61AA6A7EB000304DA /* PBXTargetDependency */,
+			);
+			name = AvazuADSDKSampleTests;
+			productName = AvazuADSDKSampleTests;
+			productReference = 4890B8D41AA6A7EB000304DA /* AvazuADSDKSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4890B8B31AA6A7EB000304DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = net.avazu.adsdk;
+				TargetAttributes = {
+					4890B8BA1AA6A7EB000304DA = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4890B8D31AA6A7EB000304DA = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 4890B8BA1AA6A7EB000304DA;
+					};
+				};
+			};
+			buildConfigurationList = 4890B8B61AA6A7EB000304DA /* Build configuration list for PBXProject "AvazuADSDKSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4890B8B21AA6A7EB000304DA;
+			productRefGroup = 4890B8BC1AA6A7EB000304DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4890B8BA1AA6A7EB000304DA /* AvazuADSDKSample */,
+				4890B8D31AA6A7EB000304DA /* AvazuADSDKSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4890B8B91AA6A7EB000304DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4890B9451AA6F98C000304DA /* TADetailViewController_iPhone.xib in Resources */,
+				488B02F11AA99EEC005C78B8 /* game_back.jpg in Resources */,
+				485654A11AB807B400F71876 /* PublisherDemo-AdSizes.plist in Resources */,
+				4856549F1AB807AB00F71876 /* Launch Screen.xib in Resources */,
+				488B02F21AA99EEC005C78B8 /* image_down1.jpg in Resources */,
+				488B02F51AA99EEC005C78B8 /* image_up1.jpg in Resources */,
+				488B02F61AA99EEC005C78B8 /* image_up2.jpg in Resources */,
+				488B02F31AA99EEC005C78B8 /* image_down2.jpg in Resources */,
+				488B02F41AA99EEC005C78B8 /* image_left1.jpg in Resources */,
+				480C6C311AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4890B8D21AA6A7EB000304DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4890B8B71AA6A7EB000304DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4890B8C11AA6A7EB000304DA /* main.m in Sources */,
+				4890B9361AA6F92C000304DA /* AvazuSampleDetailViewController.m in Sources */,
+				4890B9481AA6FBCA000304DA /* AppDelegate.m in Sources */,
+				4890B9371AA6F92C000304DA /* AvazuSampleMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4890B8D01AA6A7EB000304DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4890B8DB1AA6A7EB000304DA /* AvazuADSDKSampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4890B8D61AA6A7EB000304DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4890B8BA1AA6A7EB000304DA /* AvazuADSDKSample */;
+			targetProxy = 4890B8D51AA6A7EB000304DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		480C6C2F1AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				480C6C301AB54E7D009FEBD5 /* Base */,
+			);
+			name = TAMasterViewController_iPhone.xib;
+			path = ../../AvazuAdSDK;
+			sourceTree = "<group>";
+		};
+		4890B93E1AA6F98C000304DA /* TADetailViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4890B93F1AA6F98C000304DA /* Base */,
+			);
+			name = TADetailViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4890B8DC1AA6A7EB000304DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4890B8DD1AA6A7EB000304DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4890B8DF1AA6A7EB000304DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AvazuADSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SOURCE_ROOT)/../AvazuAdSDK/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4890B8E01AA6A7EB000304DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AvazuADSDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SOURCE_ROOT)/../AvazuAdSDK/lib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4890B8E21AA6A7EB000304DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AvazuADSDKSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvazuADSDKSample.app/AvazuADSDKSample";
+			};
+			name = Debug;
+		};
+		4890B8E31AA6A7EB000304DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AvazuADSDKSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvazuADSDKSample.app/AvazuADSDKSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4890B8B61AA6A7EB000304DA /* Build configuration list for PBXProject "AvazuADSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4890B8DC1AA6A7EB000304DA /* Debug */,
+				4890B8DD1AA6A7EB000304DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4890B8DE1AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4890B8DF1AA6A7EB000304DA /* Debug */,
+				4890B8E01AA6A7EB000304DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4890B8E11AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4890B8E21AA6A7EB000304DA /* Debug */,
+				4890B8E31AA6A7EB000304DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4890B8B31AA6A7EB000304DA /* Project object */;
+}
