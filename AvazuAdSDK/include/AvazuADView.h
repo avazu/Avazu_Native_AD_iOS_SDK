@@ -37,13 +37,13 @@
 @property (nonatomic, strong) UIWebView *webView;
 
 //the customized background color for App wall
-@property (nonatomic, copy) NSString*  blockBackColor;
-@property (nonatomic, copy) NSString*  appTitleColor;
-@property (nonatomic, copy) NSString*  buttonBackColor;
-@property (nonatomic, copy) NSString*  buttonTextColor;
-@property (nonatomic, copy) NSString*  mainBackColor;
+@property (nonatomic, strong) NSString*  blockBackColor;
+@property (nonatomic, strong) NSString*  appTitleColor;
+@property (nonatomic, strong) NSString*  buttonBackColor;
+@property (nonatomic, strong) NSString*  buttonTextColor;
+@property (nonatomic, strong) NSString*  mainBackColor;
 
-//the valid traffic source ID from Avazu
+//the valid source traffic ID from Avazu
 @property (nonatomic, copy) NSString*  sourceID;
 
 //loading indicator ON/OFF
@@ -59,14 +59,13 @@
 @property (nonatomic, assign) BOOL isNeedCat;
 @property (nonatomic, assign) BOOL isNeedSize;
 @property (nonatomic, assign) BOOL isNeedInstallButton;
-@property (nonatomic, assign) BOOL isNeedInstallNumber;
 @property (nonatomic, assign) BOOL isNeedReviewNumber;
 @property (nonatomic, assign) BOOL isDebug;
 
 //iniitialize the adview 
-- (id)initWithFrame:(CGRect)frame
-             adType:(int) adType
-           sourceID:(NSString*)sourceID;
+- (instancetype)initWithFrame:(CGRect)frame
+                       adType:(int) adType
+                     sourceID:(NSString*)sourceID;
 
 //functions for adview
 - (void)loadAD;

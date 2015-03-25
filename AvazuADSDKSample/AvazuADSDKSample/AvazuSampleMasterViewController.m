@@ -1,15 +1,21 @@
 //
 //  TAMasterViewController.m
-//  Test Application
 //
 
 #import "AvazuSampleDetailViewController.h"
 
 #import "AvazuSampleMasterViewController.h"
 
+#import "AvazuSampleDetailLandscapeViewCtroller.h"
+
+#import "AvazuCustomizedBannerSettingViewController.h"
+
+#import "AvazuCustomizedButtonAppWallSettingViewController.h"
+
 @interface AvazuSampleMasterViewController ()
 {
-    NSArray *_objects;
+    NSArray *_bannerobjects;
+    NSArray *_appwallobjects;
 }
 
 @end
@@ -24,11 +30,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Avazu iOS SDK", @"Avazu iOS SDK");
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-            self.clearsSelectionOnViewWillAppear = NO;
-            self.preferredContentSize = CGSizeMake(320.0, 600.0);
-        }
+        self.title = NSLocalizedString(@"Avazu Native Ad Demo for iOS", @"Avazu Native Ad Demo for iOS");
     }
     return self;
 }
@@ -40,46 +42,57 @@
     
     NSString *plistPath = nil;
     
-    plistPath = [[NSBundle mainBundle] pathForResource:@"PublisherDemo-AdSizes" ofType:@"plist"];
+    NSString *plistPath2 = nil;
     
-    _objects = [NSArray arrayWithContentsOfFile:plistPath];
+    plistPath = [[NSBundle mainBundle] pathForResource:@"Avazu-Appwalls" ofType:@"plist"];
+    
+    plistPath2 = [[NSBundle mainBundle] pathForResource:@"Avazu-Banners" ofType:@"plist"];
+    
+    _bannerobjects = [NSArray arrayWithContentsOfFile:plistPath2];
+    
+    _appwallobjects = [NSArray arrayWithContentsOfFile:plistPath];
 
 }
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
+    [super viewWillAppear:animated];
 }
 - (void)viewDidUnload
 {
     [super viewDidUnload];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
-}
 
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [_objects count];
+    if(section == 0){
+        return 4;
+    }
+    else {
+        return 3;
+    }
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section 
 {
-    return @"Supported Ad Formats";
+
+    if(section == 0) {
+        return @"Banner AD";
+    }
+    else
+    {
+        return @"Button AD";
+    }
 }
 
 // Customize the appearance of table view cells.
@@ -90,9 +103,6 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-            cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        }
     }
     
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] 
@@ -101,24 +111,73 @@
                                   target: nil action: nil];
     
     [self.navigationItem setBackBarButtonItem: backButton];
-    
-    NSDictionary *demoCompontent = [_objects objectAtIndex:indexPath.row];
-    
-    cell.textLabel.text = [demoCompontent objectForKey:@"title"];
+
+    if (indexPath.section==0) {
+            NSDictionary *demoCompontent = [_bannerobjects objectAtIndex:indexPath.row];
+            cell.textLabel.text = [demoCompontent objectForKey:@"title"];
+    }
+    else {
+            NSDictionary *demoCompontent = [_appwallobjects objectAtIndex:indexPath.row];
+            cell.textLabel.text = [demoCompontent objectForKey:@"title"];
+    }
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary *demoCompontent = [_objects objectAtIndex:indexPath.row];
-    
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        AvazuSampleDetailViewController* detailViewController = [[AvazuSampleDetailViewController alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
-	    detailViewController.detailItem = demoCompontent;
-        [self.navigationController pushViewController:detailViewController animated:YES];
-    } else {
-        self.detailViewController.detailItem = demoCompontent;
+    NSDictionary *demoCompontent;
+    if (indexPath.section==0) {
+        demoCompontent = [_bannerobjects objectAtIndex:indexPath.row];
+        if (indexPath.row == 3) {
+            AvazuCustomizedBannerSettingViewController* customizedBannerViewController = [[AvazuCustomizedBannerSettingViewController alloc] initWithNibName:@"AvazuCustomizedBannerSettingViewController" bundle:nil];
+            [self.navigationController pushViewController:customizedBannerViewController animated:YES];
+        }
+
+        else if (indexPath.row == 1) {
+            AvazuSampleDetailLandscapeViewCtroller* detailLandscapeViewController = [[AvazuSampleDetailLandscapeViewCtroller alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            detailLandscapeViewController.detailItem = demoCompontent;
+            [self.navigationController pushViewController:detailLandscapeViewController animated:YES];
+        }
+        else {
+            AvazuSampleDetailViewController* detailViewController = [[AvazuSampleDetailViewController alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            detailViewController.detailItem = demoCompontent;
+            [self.navigationController pushViewController:detailViewController animated:YES];
+        }
+        
+    }
+    else {
+        demoCompontent = [_appwallobjects objectAtIndex:indexPath.row];
+        if (indexPath.row == 2) {
+            AvazuCustomizedButtonAppWallSettingViewController* customizedButtonAppwallViewController = [[AvazuCustomizedButtonAppWallSettingViewController alloc] initWithNibName:@"AvazuCustomizedButtonAppWallSettingViewController" bundle:nil];
+            [self.navigationController pushViewController:customizedButtonAppwallViewController animated:YES];
+        }
+        else if (indexPath.row == 1) {
+            AvazuSampleDetailLandscapeViewCtroller* detailLandscapeViewController = [[AvazuSampleDetailLandscapeViewCtroller alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            detailLandscapeViewController.detailItem = demoCompontent;
+            [self.navigationController pushViewController:detailLandscapeViewController animated:YES];
+        }
+        else {
+            AvazuSampleDetailViewController* detailViewController = [[AvazuSampleDetailViewController alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            detailViewController.detailItem = demoCompontent;
+            [self.navigationController pushViewController:detailViewController animated:YES];
+        }
     }
 }
+
+-(BOOL)shouldAutorotate
+{
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
+}
+
 
 @end

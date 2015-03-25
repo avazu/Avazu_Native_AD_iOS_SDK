@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Button App Wall - Single Line</string>
+		<key>id</key>
+		<integer>20</integer>
+		<key>type</key>
+		<string>Single_RECT</string>
+		<key>dimension</key>
+		<string>{320,240}</string>
+		<key>adType</key>
+		<integer>4</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Button App Wall - Multiple Lines</string>
+		<key>id</key>
+		<integer>21</integer>
+		<key>type</key>
+		<string>App_Wall</string>
+		<key>dimension</key>
+		<string>{320,240}</string>
+		<key>adType</key>
+		<integer>5</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Customized Button Appwall</string>
+		<key>id</key>
+		<integer>22</integer>
+		<key>type</key>
+		<string>Customized Button Appwall</string>
+		<key>dimension</key>
+		<string>{320,240}</string>
+		<key>adType</key>
+		<integer>9</integer>
+	</dict>
+</array>
+</plist>

@@ -7,19 +7,15 @@
 
 @interface AvazuSampleDetailViewController ()
 
-@property (nonatomic, strong) UIPopoverController *masterPopoverController;
+
 @property (nonatomic, strong) UIImageView *singleBannerPictureUpView;
 @property (nonatomic, strong) UIImageView *singleBannerPicturedownView;
 @property (nonatomic, strong) UIImageView *bannerWallPictureUpView;
 @property (nonatomic, strong) UIImageView *bannerWallPictureDownView;
 @property (nonatomic, strong) UIImageView *singlebuttonAppPictureUpView;
 @property (nonatomic, strong) UIImageView *singlebuttonAppPictureDownView;
-@property (nonatomic, strong) UIImageView *transparentBannerPicView;
-@property (nonatomic, strong) UIImageView *multiplebuttonAppWallPicView;
 @property (nonatomic, assign) CGFloat screenWidth;
 @property (nonatomic, assign) CGFloat screenHeight;
-@property (nonatomic, assign) CGFloat landscapeFullscreenHeight;
-@property (nonatomic, assign) CGFloat landscapeFullscreenWidth;
 
 - (void)configureView;
 
@@ -28,14 +24,9 @@
 @implementation AvazuSampleDetailViewController
 
 @synthesize detailItem;
-@synthesize masterPopoverController;
-@synthesize statusLabel;
-@synthesize statusView;
 @synthesize adView;
 @synthesize screenWidth;
 @synthesize screenHeight;
-@synthesize landscapeFullscreenHeight;
-@synthesize landscapeFullscreenWidth;
 
 #pragma mark - Managing the detail item
 
@@ -43,20 +34,12 @@
     if (detailItem != newDetailItem) {
         detailItem = newDetailItem;
     }
-
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }
 }
 
 -(void)loadAdRequest {
     // Update the user interface for the detail item.
     if (self.detailItem) {
         if([[self.detailItem objectForKey:@"type"] isEqualToString:@"Single_Banner"]) {
-            NSLog(@"Initializing %@",[self.detailItem objectForKey:@"title"]);
-            
-            NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
-            [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
             CGSize adSize = CGSizeFromString([self.detailItem objectForKey:@"dimension"]);
 
             UIImage* playerIdle = [UIImage imageNamed:@"image_up2.jpg"];
@@ -78,7 +61,6 @@
                                                sourceID:@"6395"];
             adView.delegate = self;
             [adView loadAD];
-
             if(![self.view.subviews containsObject:adView]){
                 [self.view addSubview:adView];
             }
@@ -90,11 +72,7 @@
             [_singleBannerPicturedownView setImage: playerIdle2];
             [self.view addSubview:_singleBannerPicturedownView];
         }
-
         else if([[self.detailItem objectForKey:@"type"] isEqualToString:@"Banner_Wall"]) {
-            NSLog(@"Initializing %@",[self.detailItem objectForKey:@"title"]);
-            NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
-            [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
 
             CGSize adSize = CGSizeFromString([self.detailItem objectForKey:@"dimension"]);
             CGRect viewFrame = self.view.frame;
@@ -118,6 +96,7 @@
                                                sourceID:@"6395"];
             //set app count in banner app wall
             adView.appCount = 2;
+            adView.delegate = self;
             [adView loadAD];
             if(![self.view.subviews containsObject:adView]){
                 [self.view addSubview:adView];
@@ -131,10 +110,6 @@
 
         }
         else if([[self.detailItem objectForKey:@"type"] isEqualToString:@"Single_RECT"]) {
-            NSLog(@"Initializing %@",[self.detailItem objectForKey:@"title"]);
-            NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
-            [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
-
             CGSize adSize = CGSizeFromString([self.detailItem objectForKey:@"dimension"]);
             CGRect viewFrame = self.view.frame;
 
@@ -156,9 +131,10 @@
                                                  adType:AVAZU_SINGLE_BUTTON_APP_WALL
                                                sourceID:@"6395"];
             //setting app count and customize adview
-            adView.appCount = 8;
+            adView.appCount = 6;
             adView.isNeedReviewNumber = 0;
             adView.isNeedSize = 0;
+            adView.delegate = self;
             [adView loadAD];
             if(![self.view.subviews containsObject:adView]){
                 [self.view addSubview:adView];
@@ -168,62 +144,6 @@
             _bannerWallPictureDownView = [[UIImageView alloc] initWithFrame:CGRectMake(0, screenHeight*0.5 + 66 + 240, screenWidth, screenHeight - screenHeight*0.5- 240)];
             [_bannerWallPictureDownView setImage: singlebuttonAppPictureDown];
             [self.view addSubview:_bannerWallPictureDownView];
-        }
-
-        else if([[self.detailItem objectForKey:@"type"] isEqualToString:@"App_Wall"]) {
-            NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
-            [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
-            
-            UIImage* multiplebuttonAppWallPicture = [UIImage imageNamed:@"image_left1.jpg"];
-            _multiplebuttonAppWallPicView = [[UIImageView alloc]initWithFrame:(CGRectZero)];
-
-            _multiplebuttonAppWallPicView.frame = CGRectMake(0, self.navigationController.navigationBar.frame.size.height, landscapeFullscreenWidth*0.6, landscapeFullscreenHeight - self.navigationController.navigationBar.frame.size.height);
-            [_multiplebuttonAppWallPicView setImage: multiplebuttonAppWallPicture];
-
-            [self.view addSubview:_multiplebuttonAppWallPicView];
-
-            //create a multiple line button app wall adview start
-            CGRect adFrame = CGRectMake(landscapeFullscreenWidth*0.6, self.navigationController.navigationBar.frame.size.height, landscapeFullscreenWidth * 0.4 , landscapeFullscreenHeight - self.navigationController.navigationBar.frame.size.height);
-            self.title = [self.detailItem objectForKey:@"title"];
-            adView = [[AvazuADView alloc] initWithFrame:adFrame
-                                                 adType:AVAZU_MULTIPLE_BUTTON_APP_WALL
-                                               sourceID:@"6395"];
-            adView.appCount = 8;
-            [adView loadAD];
-            if(![self.view.subviews containsObject:adView]){
-                [self.view addSubview:adView];
-            }
-            //create a multiple line button app wall adview end
-        }
-        else if([[self.detailItem objectForKey:@"type"] isEqualToString:@"Transparent_Banner"]) {
-            NSLog(@"Initializing %@",[self.detailItem objectForKey:@"title"]);
-
-            NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
-            [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
-
-            UIImage* transparentBannerPicture = [UIImage imageNamed:@"game_back.jpg"];
-            _transparentBannerPicView = [[UIImageView alloc]initWithFrame:(CGRectZero)];
-            
-            _transparentBannerPicView.frame = CGRectMake(0, self.navigationController.navigationBar.frame.size.height, landscapeFullscreenWidth, landscapeFullscreenHeight - self.navigationController.navigationBar.frame.size.height);
-
-            [_transparentBannerPicView setImage: transparentBannerPicture];
-
-            [self.view addSubview:_transparentBannerPicView];
-
-            CGSize adSize = CGSizeFromString([self.detailItem objectForKey:@"dimension"]);
-            //create a transparent adview start
-            CGRect adFrame = CGRectMake((landscapeFullscreenWidth - adSize.width) / 2, landscapeFullscreenHeight * 0.65, adSize.width, adSize.height);
-            self.title = [self.detailItem objectForKey:@"title"];
-            adView = [[AvazuADView alloc] initWithFrame:adFrame
-                                                 adType:AVAZU_TRANSPARENT_SINGLE_BANNER
-                                               sourceID:@"6395"];
-            adView.isNeedSize = 0;
-            adView.transparentBannerAlpha = 50;
-            adView.mainBackColor  = @"#000000";
-            [adView loadAD];
-            if(![self.view.subviews containsObject:adView]){
-                [self.view addSubview:adView];
-            }
         }
     }
 }
@@ -236,16 +156,11 @@
     }
     screenHeight = [UIScreen mainScreen].applicationFrame.size.height;
     screenWidth = [UIScreen mainScreen].applicationFrame.size.width;
-
-    landscapeFullscreenHeight = [UIScreen mainScreen].bounds.size.width;
-    landscapeFullscreenWidth  = [UIScreen mainScreen].bounds.size.height;
-
     [self loadAdRequest];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    statusLabel.hidden = YES;
     [self configureView];
 }
 
@@ -253,15 +168,12 @@
     [super viewWillDisappear:animated];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
-    } else {
-        return YES;
-    }
+- (void)viewWillAppear:(BOOL)animated {
+    
+    NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationPortrait];
+    [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
 }
-
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Avazu iOS SDK", @"Avazu iOS SDK");
@@ -284,6 +196,21 @@
 #pragma dealloc
 -(void)dealloc {
     self.adView.delegate = nil;
+}
+
+-(BOOL)shouldAutorotate
+{
+    return NO;
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskPortrait;
+}
+
+- (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation
+{
+    return UIInterfaceOrientationPortrait;
 }
 
 @end

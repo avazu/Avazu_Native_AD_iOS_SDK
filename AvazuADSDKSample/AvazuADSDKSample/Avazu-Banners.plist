@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Single Banner</string>
+		<key>id</key>
+		<integer>15</integer>
+		<key>type</key>
+		<string>Single_Banner</string>
+		<key>dimension</key>
+		<string>{320,100}</string>
+		<key>adType</key>
+		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Single Banner - Transparent</string>
+		<key>id</key>
+		<integer>10</integer>
+		<key>type</key>
+		<string>Transparent_Banner</string>
+		<key>dimension</key>
+		<string>{400,110}</string>
+		<key>adType</key>
+		<integer>2</integer>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Banner App Wall</string>
+		<key>type</key>
+		<string>Banner_Wall</string>
+		<key>id</key>
+		<integer>3</integer>
+		<key>dimension</key>
+		<string>{320,200}</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Customized Banner</string>
+		<key>id</key>
+		<integer>21</integer>
+		<key>type</key>
+		<string>Customized_Banner</string>
+		<key>dimension</key>
+		<string>{320,240}</string>
+		<key>adType</key>
+		<integer>9</integer>
+	</dict>
+</array>
+</plist>

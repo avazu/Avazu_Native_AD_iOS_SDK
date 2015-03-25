@@ -13,10 +13,4 @@
 
 @property (strong, nonatomic) id detailItem;
 
-@property (strong, nonatomic) IBOutlet UIView *statusView;
-
-@property (strong, nonatomic) IBOutlet UILabel *statusLabel;
-
-@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
-
 @end

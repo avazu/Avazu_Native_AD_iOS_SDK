@@ -18,7 +18,7 @@
     // Override point for customization after application launch.
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
         AvazuSampleMasterViewController *masterViewController = [[AvazuSampleMasterViewController alloc] initWithNibName:@"TAMasterViewController_iPhone" bundle:nil];
-        self.navigationController = [[UINavigationController alloc] initWithRootViewController:masterViewController];
+        self.navigationController = [[AvazuNavigationController alloc] initWithRootViewController:masterViewController];
         self.window.rootViewController = self.navigationController;
     }
     [self.window makeKeyAndVisible];

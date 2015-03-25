@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480C6C311AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 480C6C2F1AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib */; };
+		480273961ABA8223008D1CCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 480273951ABA8223008D1CCF /* Images.xcassets */; };
+		484CE26D1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 484CE26C1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.m */; };
+		484CE26F1AC0163A005853B4 /* 3dgames-background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 484CE26E1AC0163A005853B4 /* 3dgames-background.jpg */; };
+		484CE2721AC11E29005853B4 /* AvazuCustomizedADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484CE2711AC11E29005853B4 /* AvazuCustomizedADViewController.m */; };
+		484F55CC1AC18B2A009D4802 /* Avazu-Appwalls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484F55C81AC18542009D4802 /* Avazu-Appwalls.plist */; };
+		484F55CD1AC18B2E009D4802 /* Avazu-Banners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484F55C91AC18542009D4802 /* Avazu-Banners.plist */; };
 		4856549D1AB7FB1500F71876 /* libAvazuAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */; };
 		4856549F1AB807AB00F71876 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4856549E1AB807AB00F71876 /* Launch Screen.xib */; };
-		485654A11AB807B400F71876 /* PublisherDemo-AdSizes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485654A01AB807B400F71876 /* PublisherDemo-AdSizes.plist */; };
+		487F777B1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 487F77791AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.m */; };
+		487F777C1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F777A1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.xib */; };
+		487F77C81AC2B4DC002EB54B /* TADetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F77C61AC2B4DC002EB54B /* TADetailViewController_iPhone.xib */; };
+		487F77C91AC2B4DC002EB54B /* TAMasterViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F77C71AC2B4DC002EB54B /* TAMasterViewController_iPhone.xib */; };
+		48886B831ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48886B811ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.m */; };
+		48886B841ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48886B821ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.xib */; };
+		48886B8D1ABFE466002B39FB /* AvazuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48886B8C1ABFE466002B39FB /* AvazuNavigationController.m */; };
 		488B02F11AA99EEC005C78B8 /* game_back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EB1AA99EEC005C78B8 /* game_back.jpg */; };
 		488B02F21AA99EEC005C78B8 /* image_down1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EC1AA99EEC005C78B8 /* image_down1.jpg */; };
 		488B02F31AA99EEC005C78B8 /* image_down2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02ED1AA99EEC005C78B8 /* image_down2.jpg */; };
@@ -18,10 +29,8 @@
 		488B02F51AA99EEC005C78B8 /* image_up1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02EF1AA99EEC005C78B8 /* image_up1.jpg */; };
 		488B02F61AA99EEC005C78B8 /* image_up2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 488B02F01AA99EEC005C78B8 /* image_up2.jpg */; };
 		4890B8C11AA6A7EB000304DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B8C01AA6A7EB000304DA /* main.m */; };
-		4890B8DB1AA6A7EB000304DA /* AvazuADSDKSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B8DA1AA6A7EB000304DA /* AvazuADSDKSampleTests.m */; };
 		4890B9361AA6F92C000304DA /* AvazuSampleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */; };
 		4890B9371AA6F92C000304DA /* AvazuSampleMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */; };
-		4890B9451AA6F98C000304DA /* TADetailViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4890B93E1AA6F98C000304DA /* TADetailViewController_iPhone.xib */; };
 		4890B9481AA6FBCA000304DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4890B9301AA6F92C000304DA /* AppDelegate.m */; };
 		48B3E07B1AAEE419006780ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0781AAEE3B7006780ED /* UIKit.framework */; };
 		48B3E07C1AAEE41B006780ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0761AAEE3AE006780ED /* Foundation.framework */; };
@@ -29,42 +38,44 @@
 		48B3E0841AAFF905006780ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0831AAFF905006780ED /* CoreTelephony.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		4890B8D51AA6A7EB000304DA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4890B8B31AA6A7EB000304DA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4890B8BA1AA6A7EB000304DA;
-			remoteInfo = AvazuADSDKSample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		480C6C301AB54E7D009FEBD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AvazuADSDKSample/Base.lproj/TAMasterViewController_iPhone.xib; sourceTree = SOURCE_ROOT; };
+		480273951ABA8223008D1CCF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../AvazuDemo/Images.xcassets; sourceTree = "<group>"; };
+		484CE26B1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuSampleDetailLandscapeViewCtroller.h; sourceTree = "<group>"; };
+		484CE26C1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuSampleDetailLandscapeViewCtroller.m; sourceTree = "<group>"; };
+		484CE26E1AC0163A005853B4 /* 3dgames-background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3dgames-background.jpg"; sourceTree = "<group>"; };
+		484CE2701AC11E29005853B4 /* AvazuCustomizedADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuCustomizedADViewController.h; sourceTree = "<group>"; };
+		484CE2711AC11E29005853B4 /* AvazuCustomizedADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuCustomizedADViewController.m; sourceTree = "<group>"; };
+		484F55C81AC18542009D4802 /* Avazu-Appwalls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Avazu-Appwalls.plist"; path = "AvazuADSDKSample/Avazu-Appwalls.plist"; sourceTree = SOURCE_ROOT; };
+		484F55C91AC18542009D4802 /* Avazu-Banners.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Avazu-Banners.plist"; path = "AvazuADSDKSample/Avazu-Banners.plist"; sourceTree = SOURCE_ROOT; };
 		48503BE51AA8087700C7C48D /* AvazuADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuADView.h; sourceTree = "<group>"; };
 		48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAvazuAdSDK.a; sourceTree = "<group>"; };
 		48503BEB1AA843A200C7C48D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4856549E1AB807AB00F71876 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
-		485654A01AB807B400F71876 /* PublisherDemo-AdSizes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PublisherDemo-AdSizes.plist"; sourceTree = "<group>"; };
+		487F77781AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuCustomizedButtonAppWallSettingViewController.h; sourceTree = "<group>"; };
+		487F77791AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuCustomizedButtonAppWallSettingViewController.m; sourceTree = "<group>"; };
+		487F777A1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvazuCustomizedButtonAppWallSettingViewController.xib; sourceTree = "<group>"; };
+		487F77C61AC2B4DC002EB54B /* TADetailViewController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TADetailViewController_iPhone.xib; sourceTree = "<group>"; };
+		487F77C71AC2B4DC002EB54B /* TAMasterViewController_iPhone.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAMasterViewController_iPhone.xib; sourceTree = "<group>"; };
+		48886B801ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuCustomizedBannerSettingViewController.h; sourceTree = "<group>"; };
+		48886B811ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuCustomizedBannerSettingViewController.m; sourceTree = "<group>"; };
+		48886B821ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AvazuCustomizedBannerSettingViewController.xib; sourceTree = "<group>"; };
+		48886B8B1ABFE466002B39FB /* AvazuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuNavigationController.h; sourceTree = "<group>"; };
+		48886B8C1ABFE466002B39FB /* AvazuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuNavigationController.m; sourceTree = "<group>"; };
 		488B02EB1AA99EEC005C78B8 /* game_back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = game_back.jpg; sourceTree = "<group>"; };
 		488B02EC1AA99EEC005C78B8 /* image_down1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_down1.jpg; sourceTree = "<group>"; };
 		488B02ED1AA99EEC005C78B8 /* image_down2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_down2.jpg; sourceTree = "<group>"; };
 		488B02EE1AA99EEC005C78B8 /* image_left1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_left1.jpg; sourceTree = "<group>"; };
 		488B02EF1AA99EEC005C78B8 /* image_up1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_up1.jpg; sourceTree = "<group>"; };
 		488B02F01AA99EEC005C78B8 /* image_up2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image_up2.jpg; sourceTree = "<group>"; };
-		4890B8BB1AA6A7EB000304DA /* AvazuADSDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvazuADSDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4890B8BB1AA6A7EB000304DA /* AvazuDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvazuDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4890B8BF1AA6A7EB000304DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4890B8C01AA6A7EB000304DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4890B8D41AA6A7EB000304DA /* AvazuADSDKSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvazuADSDKSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4890B8D91AA6A7EB000304DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4890B8DA1AA6A7EB000304DA /* AvazuADSDKSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AvazuADSDKSampleTests.m; sourceTree = "<group>"; };
 		4890B92F1AA6F92C000304DA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4890B9301AA6F92C000304DA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4890B9311AA6F92C000304DA /* AvazuSampleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuSampleDetailViewController.h; sourceTree = "<group>"; };
 		4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuSampleDetailViewController.m; sourceTree = "<group>"; };
 		4890B9331AA6F92C000304DA /* AvazuSampleMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuSampleMasterViewController.h; sourceTree = "<group>"; };
 		4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuSampleMasterViewController.m; sourceTree = "<group>"; };
-		4890B93F1AA6F98C000304DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TADetailViewController_iPhone.xib; sourceTree = "<group>"; };
 		48B3E0761AAEE3AE006780ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48B3E0781AAEE3B7006780ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		48B3E0831AAFF905006780ED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -80,13 +91,6 @@
 				48B3E07B1AAEE419006780ED /* UIKit.framework in Frameworks */,
 				48B3E07C1AAEE41B006780ED /* Foundation.framework in Frameworks */,
 				48B3E07D1AAEE41D006780ED /* AdSupport.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4890B8D11AA6A7EB000304DA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,9 +123,33 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		487F77CA1AC2B6AE002EB54B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4890B92F1AA6F92C000304DA /* AppDelegate.h */,
+				4890B9301AA6F92C000304DA /* AppDelegate.m */,
+				4890B9311AA6F92C000304DA /* AvazuSampleDetailViewController.h */,
+				4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */,
+				4890B9331AA6F92C000304DA /* AvazuSampleMasterViewController.h */,
+				4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */,
+				484CE26B1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.h */,
+				484CE26C1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.m */,
+				48886B801ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.h */,
+				48886B811ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.m */,
+				484CE2701AC11E29005853B4 /* AvazuCustomizedADViewController.h */,
+				484CE2711AC11E29005853B4 /* AvazuCustomizedADViewController.m */,
+				487F77781AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.h */,
+				487F77791AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.m */,
+				48886B8B1ABFE466002B39FB /* AvazuNavigationController.h */,
+				48886B8C1ABFE466002B39FB /* AvazuNavigationController.m */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
 		488B02EA1AA99EEC005C78B8 /* pic */ = {
 			isa = PBXGroup;
 			children = (
+				484CE26E1AC0163A005853B4 /* 3dgames-background.jpg */,
 				488B02EB1AA99EEC005C78B8 /* game_back.jpg */,
 				488B02EC1AA99EEC005C78B8 /* image_down1.jpg */,
 				488B02ED1AA99EEC005C78B8 /* image_down2.jpg */,
@@ -136,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				4890B8BD1AA6A7EB000304DA /* AvazuADSDKSample */,
-				4890B8D71AA6A7EB000304DA /* AvazuADSDKSampleTests */,
 				48B3E07A1AAEE3CB006780ED /* Frameworks */,
 				4890B8BC1AA6A7EB000304DA /* Products */,
 			);
@@ -145,8 +172,7 @@
 		4890B8BC1AA6A7EB000304DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4890B8BB1AA6A7EB000304DA /* AvazuADSDKSample.app */,
-				4890B8D41AA6A7EB000304DA /* AvazuADSDKSampleTests.xctest */,
+				4890B8BB1AA6A7EB000304DA /* AvazuDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,17 +180,9 @@
 		4890B8BD1AA6A7EB000304DA /* AvazuADSDKSample */ = {
 			isa = PBXGroup;
 			children = (
+				487F77CA1AC2B6AE002EB54B /* src */,
 				488B02EA1AA99EEC005C78B8 /* pic */,
-				4890B92F1AA6F92C000304DA /* AppDelegate.h */,
-				4890B9301AA6F92C000304DA /* AppDelegate.m */,
 				48503BE21AA8087700C7C48D /* AvazuAdSDK */,
-				4890B9311AA6F92C000304DA /* AvazuSampleDetailViewController.h */,
-				4890B9321AA6F92C000304DA /* AvazuSampleDetailViewController.m */,
-				4890B9341AA6F92C000304DA /* AvazuSampleMasterViewController.m */,
-				4890B9331AA6F92C000304DA /* AvazuSampleMasterViewController.h */,
-				4890B93E1AA6F98C000304DA /* TADetailViewController_iPhone.xib */,
-				480C6C2F1AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib */,
-				485654A01AB807B400F71876 /* PublisherDemo-AdSizes.plist */,
 				4890B8BE1AA6A7EB000304DA /* Supporting Files */,
 			);
 			path = AvazuADSDKSample;
@@ -173,26 +191,16 @@
 		4890B8BE1AA6A7EB000304DA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				480273951ABA8223008D1CCF /* Images.xcassets */,
+				487F777A1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.xib */,
+				48886B821ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.xib */,
+				487F77C61AC2B4DC002EB54B /* TADetailViewController_iPhone.xib */,
+				487F77C71AC2B4DC002EB54B /* TAMasterViewController_iPhone.xib */,
 				4856549E1AB807AB00F71876 /* Launch Screen.xib */,
+				484F55C81AC18542009D4802 /* Avazu-Appwalls.plist */,
+				484F55C91AC18542009D4802 /* Avazu-Banners.plist */,
 				4890B8BF1AA6A7EB000304DA /* Info.plist */,
 				4890B8C01AA6A7EB000304DA /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		4890B8D71AA6A7EB000304DA /* AvazuADSDKSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				4890B8DA1AA6A7EB000304DA /* AvazuADSDKSampleTests.m */,
-				4890B8D81AA6A7EB000304DA /* Supporting Files */,
-			);
-			path = AvazuADSDKSampleTests;
-			sourceTree = "<group>";
-		};
-		4890B8D81AA6A7EB000304DA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4890B8D91AA6A7EB000304DA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,9 +220,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4890B8BA1AA6A7EB000304DA /* AvazuADSDKSample */ = {
+		4890B8BA1AA6A7EB000304DA /* AvazuDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4890B8DE1AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSample" */;
+			buildConfigurationList = 4890B8DE1AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuDemo" */;
 			buildPhases = (
 				4890B8B71AA6A7EB000304DA /* Sources */,
 				4890B8B81AA6A7EB000304DA /* Frameworks */,
@@ -224,28 +232,10 @@
 			);
 			dependencies = (
 			);
-			name = AvazuADSDKSample;
+			name = AvazuDemo;
 			productName = AvazuADSDKSample;
-			productReference = 4890B8BB1AA6A7EB000304DA /* AvazuADSDKSample.app */;
+			productReference = 4890B8BB1AA6A7EB000304DA /* AvazuDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		4890B8D31AA6A7EB000304DA /* AvazuADSDKSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4890B8E11AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSampleTests" */;
-			buildPhases = (
-				4890B8D01AA6A7EB000304DA /* Sources */,
-				4890B8D11AA6A7EB000304DA /* Frameworks */,
-				4890B8D21AA6A7EB000304DA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4890B8D61AA6A7EB000304DA /* PBXTargetDependency */,
-			);
-			name = AvazuADSDKSampleTests;
-			productName = AvazuADSDKSampleTests;
-			productReference = 4890B8D41AA6A7EB000304DA /* AvazuADSDKSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -258,10 +248,6 @@
 				TargetAttributes = {
 					4890B8BA1AA6A7EB000304DA = {
 						CreatedOnToolsVersion = 6.1.1;
-					};
-					4890B8D31AA6A7EB000304DA = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 4890B8BA1AA6A7EB000304DA;
 					};
 				};
 			};
@@ -278,8 +264,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4890B8BA1AA6A7EB000304DA /* AvazuADSDKSample */,
-				4890B8D31AA6A7EB000304DA /* AvazuADSDKSampleTests */,
+				4890B8BA1AA6A7EB000304DA /* AvazuDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -289,23 +274,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4890B9451AA6F98C000304DA /* TADetailViewController_iPhone.xib in Resources */,
 				488B02F11AA99EEC005C78B8 /* game_back.jpg in Resources */,
-				485654A11AB807B400F71876 /* PublisherDemo-AdSizes.plist in Resources */,
-				4856549F1AB807AB00F71876 /* Launch Screen.xib in Resources */,
+				484CE26F1AC0163A005853B4 /* 3dgames-background.jpg in Resources */,
+				480273961ABA8223008D1CCF /* Images.xcassets in Resources */,
 				488B02F21AA99EEC005C78B8 /* image_down1.jpg in Resources */,
 				488B02F51AA99EEC005C78B8 /* image_up1.jpg in Resources */,
 				488B02F61AA99EEC005C78B8 /* image_up2.jpg in Resources */,
 				488B02F31AA99EEC005C78B8 /* image_down2.jpg in Resources */,
 				488B02F41AA99EEC005C78B8 /* image_left1.jpg in Resources */,
-				480C6C311AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4890B8D21AA6A7EB000304DA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				484F55CC1AC18B2A009D4802 /* Avazu-Appwalls.plist in Resources */,
+				484F55CD1AC18B2E009D4802 /* Avazu-Banners.plist in Resources */,
+				487F777C1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.xib in Resources */,
+				48886B841ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.xib in Resources */,
+				4856549F1AB807AB00F71876 /* Launch Screen.xib in Resources */,
+				487F77C81AC2B4DC002EB54B /* TADetailViewController_iPhone.xib in Resources */,
+				487F77C91AC2B4DC002EB54B /* TAMasterViewController_iPhone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,50 +299,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48886B8D1ABFE466002B39FB /* AvazuNavigationController.m in Sources */,
 				4890B8C11AA6A7EB000304DA /* main.m in Sources */,
+				487F777B1AC2A185002EB54B /* AvazuCustomizedButtonAppWallSettingViewController.m in Sources */,
+				484CE2721AC11E29005853B4 /* AvazuCustomizedADViewController.m in Sources */,
+				48886B831ABF1CE6002B39FB /* AvazuCustomizedBannerSettingViewController.m in Sources */,
+				484CE26D1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.m in Sources */,
 				4890B9361AA6F92C000304DA /* AvazuSampleDetailViewController.m in Sources */,
 				4890B9481AA6FBCA000304DA /* AppDelegate.m in Sources */,
 				4890B9371AA6F92C000304DA /* AvazuSampleMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4890B8D01AA6A7EB000304DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4890B8DB1AA6A7EB000304DA /* AvazuADSDKSampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		4890B8D61AA6A7EB000304DA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4890B8BA1AA6A7EB000304DA /* AvazuADSDKSample */;
-			targetProxy = 4890B8D51AA6A7EB000304DA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		480C6C2F1AB54E7D009FEBD5 /* TAMasterViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				480C6C301AB54E7D009FEBD5 /* Base */,
-			);
-			name = TAMasterViewController_iPhone.xib;
-			path = ../../AvazuAdSDK;
-			sourceTree = "<group>";
-		};
-		4890B93E1AA6F98C000304DA /* TADetailViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4890B93F1AA6F98C000304DA /* Base */,
-			);
-			name = TADetailViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4890B8DC1AA6A7EB000304DA /* Debug */ = {
@@ -470,40 +422,6 @@
 			};
 			name = Release;
 		};
-		4890B8E21AA6A7EB000304DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AvazuADSDKSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvazuADSDKSample.app/AvazuADSDKSample";
-			};
-			name = Debug;
-		};
-		4890B8E31AA6A7EB000304DA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AvazuADSDKSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvazuADSDKSample.app/AvazuADSDKSample";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,20 +434,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4890B8DE1AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSample" */ = {
+		4890B8DE1AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4890B8DF1AA6A7EB000304DA /* Debug */,
 				4890B8E01AA6A7EB000304DA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4890B8E11AA6A7EB000304DA /* Build configuration list for PBXNativeTarget "AvazuADSDKSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4890B8E21AA6A7EB000304DA /* Debug */,
-				4890B8E31AA6A7EB000304DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

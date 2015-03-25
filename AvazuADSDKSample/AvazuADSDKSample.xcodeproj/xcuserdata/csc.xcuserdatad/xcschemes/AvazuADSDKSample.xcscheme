@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4890B8BA1AA6A7EB000304DA"
-               BuildableName = "AvazuADSDKSample.app"
-               BlueprintName = "AvazuADSDKSample"
+               BuildableName = "AvazuDemo.app"
+               BlueprintName = "AvazuDemo"
                ReferencedContainer = "container:AvazuADSDKSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -29,8 +29,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4890B8D31AA6A7EB000304DA"
-               BuildableName = "AvazuADSDKSampleTests.xctest"
-               BlueprintName = "AvazuADSDKSampleTests"
+               BuildableName = "AvazuDemoTest.xctest"
+               BlueprintName = "AvazuDemoTest"
                ReferencedContainer = "container:AvazuADSDKSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +47,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4890B8D31AA6A7EB000304DA"
-               BuildableName = "AvazuADSDKSampleTests.xctest"
-               BlueprintName = "AvazuADSDKSampleTests"
+               BuildableName = "AvazuDemoTest.xctest"
+               BlueprintName = "AvazuDemoTest"
                ReferencedContainer = "container:AvazuADSDKSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4890B8BA1AA6A7EB000304DA"
-            BuildableName = "AvazuADSDKSample.app"
-            BlueprintName = "AvazuADSDKSample"
+            BuildableName = "AvazuDemo.app"
+            BlueprintName = "AvazuDemo"
             ReferencedContainer = "container:AvazuADSDKSample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,12 +72,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4890B8BA1AA6A7EB000304DA"
-            BuildableName = "AvazuADSDKSample.app"
-            BlueprintName = "AvazuADSDKSample"
+            BuildableName = "AvazuDemo.app"
+            BlueprintName = "AvazuDemo"
             ReferencedContainer = "container:AvazuADSDKSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -90,12 +91,13 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4890B8BA1AA6A7EB000304DA"
-            BuildableName = "AvazuADSDKSample.app"
-            BlueprintName = "AvazuADSDKSample"
+            BuildableName = "AvazuDemo.app"
+            BlueprintName = "AvazuDemo"
             ReferencedContainer = "container:AvazuADSDKSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
