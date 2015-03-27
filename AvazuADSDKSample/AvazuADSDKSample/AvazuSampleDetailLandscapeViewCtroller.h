@@ -10,9 +10,7 @@
 #import "AvazuADView.h"
 
 @interface AvazuSampleDetailLandscapeViewCtroller : UIViewController <AvazuADViewDelegate>
-
 @property (strong, nonatomic) AvazuADView *adView;
-
 @property (strong, nonatomic) id detailItem;
 
 @end

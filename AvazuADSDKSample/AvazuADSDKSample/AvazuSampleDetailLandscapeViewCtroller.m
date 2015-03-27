@@ -1,5 +1,5 @@
 //
-//  AvazuSampleDetailLandscapeViewCtroller.m
+//  AvazuCustomizedADSettingViewController.m
 //  AvazuADSDKSample
 //
 //  Created by caosc on 15/3/23.
@@ -16,8 +16,6 @@
 @property (nonatomic, assign) CGFloat landscapeFullscreenHeight;
 @property (nonatomic, assign) CGFloat landscapeFullscreenWidth;
 
-- (void)configureView;
-
 @end
 
 @implementation AvazuSampleDetailLandscapeViewCtroller
@@ -29,14 +27,15 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
+- (void)setDetailItem:(id)newDetailItem
+{
     if (detailItem != newDetailItem) {
         detailItem = newDetailItem;
     }
 }
 
--(void)loadAdRequest {
-    // Update the user interface for the detail item.
+-(void)loadAdRequest
+{
     if (self.detailItem) {
         if([[self.detailItem objectForKey:@"type"] isEqualToString:@"Transparent_Banner"]) {            
             UIImage* transparentBannerPicture = [UIImage imageNamed:@"3dgames-background.jpg"];
@@ -64,6 +63,7 @@
             if(![self.view.subviews containsObject:adView]){
                 [self.view addSubview:adView];
             }
+            //create a transparent adview end
         }
         
         else if([[self.detailItem objectForKey:@"type"] isEqualToString:@"App_Wall"]) {
@@ -95,7 +95,8 @@
     }
 }
 
-- (void)configureView {
+- (void)configureView
+{
     if(adView) {
         adView.hidden = YES;
         [adView removeFromSuperview];
@@ -107,18 +108,21 @@
     [self loadAdRequest];
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     [self configureView];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)viewWillAppear:(BOOL)animated
+{
     [super viewWillAppear:animated];
     NSNumber *value = [NSNumber numberWithInt:UIInterfaceOrientationLandscapeLeft];
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
 }
 
-- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         self.title = NSLocalizedString(@"Avazu iOS SDK", @"Avazu iOS SDK");
@@ -139,7 +143,8 @@
 }
 
 #pragma dealloc
--(void)dealloc {
+-(void)dealloc
+{
     self.adView.delegate = nil;
 }
 

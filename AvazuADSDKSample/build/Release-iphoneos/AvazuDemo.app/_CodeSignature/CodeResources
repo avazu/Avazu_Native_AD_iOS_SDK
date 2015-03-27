@@ -8,6 +8,10 @@
 		<data>
 		EmCQldsyy0pXKhsT8Z7p7c9ToDw=
 		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		3TygTATZrloTbVsH08fstJAxcuM=
+		</data>
 		<key>AppIcon60x60@3x.png</key>
 		<data>
 		djiY14zkvKl3oBla5umYGga+430=
@@ -22,19 +26,27 @@
 		</data>
 		<key>Avazu-Appwalls.plist</key>
 		<data>
-		39twcbwPusUVONYUkZ/LmQws7Ik=
+		LXC6bt19aVALjNjMN3RfbRbWLHk=
 		</data>
 		<key>Avazu-Banners.plist</key>
 		<data>
-		oyBz9J7bFecsvwQ08O2zhPKOed8=
+		Zy+xssGqF98sgtrAxCEq0UPK1O8=
 		</data>
-		<key>AvazuCustomizedBannerSettingViewController.nib</key>
+		<key>Avazu-CustomizedSettingsData.plist</key>
 		<data>
-		5oqGsoL3ke+77UZZjAwIjWVmuBs=
+		g+QXz4RccSvEKYxqzrChEUtyh4w=
 		</data>
-		<key>AvazuCustomizedButtonAppWallSettingViewController.nib</key>
+		<key>AvazuCustomizedADSettingViewController.nib</key>
 		<data>
-		4WG1ldpcHY+c9RG8ezLWGfC6oAM=
+		h9pUdRYKw7HU4HQEUj5xG+hMXRE=
+		</data>
+		<key>AvazuDetailViewController.nib</key>
+		<data>
+		ZGBDAdgVmHuXj6oK1jfg0T9c2xo=
+		</data>
+		<key>AvazuMasterViewController.nib</key>
+		<data>
+		gxPQrWXjXZIkNAGjsxdSvbZQsSQ=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -42,19 +54,11 @@
 		</data>
 		<key>Launch Screen.nib</key>
 		<data>
-		r3izvK7k4fjHSMg1D/PAic5dd0k=
+		zJLjSz/XpCL6rlsj49AQDHP0VtY=
 		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
-		</data>
-		<key>TADetailViewController_iPhone.nib</key>
-		<data>
-		n6L8Dp3L4hNdFKNw4KZN5VoL5aI=
-		</data>
-		<key>TAMasterViewController_iPhone.nib</key>
-		<data>
-		uyPC3ST5cU0OYRsFBaDDwB4OtRw=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -91,6 +95,10 @@
 		<data>
 		EmCQldsyy0pXKhsT8Z7p7c9ToDw=
 		</data>
+		<key>AppIcon60x60@2x.png</key>
+		<data>
+		3TygTATZrloTbVsH08fstJAxcuM=
+		</data>
 		<key>AppIcon60x60@3x.png</key>
 		<data>
 		djiY14zkvKl3oBla5umYGga+430=
@@ -105,31 +113,31 @@
 		</data>
 		<key>Avazu-Appwalls.plist</key>
 		<data>
-		39twcbwPusUVONYUkZ/LmQws7Ik=
+		LXC6bt19aVALjNjMN3RfbRbWLHk=
 		</data>
 		<key>Avazu-Banners.plist</key>
 		<data>
-		oyBz9J7bFecsvwQ08O2zhPKOed8=
+		Zy+xssGqF98sgtrAxCEq0UPK1O8=
 		</data>
-		<key>AvazuCustomizedBannerSettingViewController.nib</key>
+		<key>Avazu-CustomizedSettingsData.plist</key>
 		<data>
-		5oqGsoL3ke+77UZZjAwIjWVmuBs=
+		g+QXz4RccSvEKYxqzrChEUtyh4w=
 		</data>
-		<key>AvazuCustomizedButtonAppWallSettingViewController.nib</key>
+		<key>AvazuCustomizedADSettingViewController.nib</key>
 		<data>
-		4WG1ldpcHY+c9RG8ezLWGfC6oAM=
+		h9pUdRYKw7HU4HQEUj5xG+hMXRE=
+		</data>
+		<key>AvazuDetailViewController.nib</key>
+		<data>
+		ZGBDAdgVmHuXj6oK1jfg0T9c2xo=
+		</data>
+		<key>AvazuMasterViewController.nib</key>
+		<data>
+		gxPQrWXjXZIkNAGjsxdSvbZQsSQ=
 		</data>
 		<key>Launch Screen.nib</key>
 		<data>
-		r3izvK7k4fjHSMg1D/PAic5dd0k=
-		</data>
-		<key>TADetailViewController_iPhone.nib</key>
-		<data>
-		n6L8Dp3L4hNdFKNw4KZN5VoL5aI=
-		</data>
-		<key>TAMasterViewController_iPhone.nib</key>
-		<data>
-		uyPC3ST5cU0OYRsFBaDDwB4OtRw=
+		zJLjSz/XpCL6rlsj49AQDHP0VtY=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>

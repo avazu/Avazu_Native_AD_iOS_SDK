@@ -29,3 +29,8 @@ For the ad types, the appearance and size of the ad are fully customizable with 
 ##Intergration 
 
 Please refer to the docs in the project for detail informatin about how to intergrate our SDK in your project.
+
+##Installing Sample
+
+You can simply scan the QR code below to install the sample into your iOS device(iOS 7.0 or later, jailbroken is not required)
+<div style="text-align:center"><img src ="avazu_ad_sdk_ios_download_qrcode.png" /></div>

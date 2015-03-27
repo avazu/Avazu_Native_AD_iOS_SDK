@@ -1,16 +1,15 @@
+//  AvazuSampleMasterViewController.m
+//  AvazuADSDKSample
 //
-//  TAMasterViewController.m
+//  Created by caosc on 15/3/4.
+//  Copyright (c) 2015年 net.avazu.adsdk. All rights reserved.
 //
-
-#import "AvazuSampleDetailViewController.h"
-
-#import "AvazuSampleMasterViewController.h"
 
 #import "AvazuSampleDetailLandscapeViewCtroller.h"
+#import "AvazuSampleDetailPortraitViewController.h"
+#import "AvazuSampleMasterViewController.h"
+#import "AvazuCustomizedADSettingViewController.h"
 
-#import "AvazuCustomizedBannerSettingViewController.h"
-
-#import "AvazuCustomizedButtonAppWallSettingViewController.h"
 
 @interface AvazuSampleMasterViewController ()
 {
@@ -60,6 +59,7 @@
     [[UIDevice currentDevice] setValue:value forKey:@"orientation"];
     [super viewWillAppear:animated];
 }
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];
@@ -87,11 +87,19 @@
 {
 
     if(section == 0) {
-        return @"Banner AD";
+        return @"Banner Ads";
     }
     else
     {
-        return @"Button AD";
+        return @"Button Ads";
+    }
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
+{
+    if([view isKindOfClass:[UITableViewHeaderFooterView class]]){
+        UITableViewHeaderFooterView *tableViewHeaderFooterView = (UITableViewHeaderFooterView *) view;
+        tableViewHeaderFooterView.textLabel.text = [tableViewHeaderFooterView.textLabel.text capitalizedString];
     }
 }
 
@@ -129,17 +137,18 @@
     if (indexPath.section==0) {
         demoCompontent = [_bannerobjects objectAtIndex:indexPath.row];
         if (indexPath.row == 3) {
-            AvazuCustomizedBannerSettingViewController* customizedBannerViewController = [[AvazuCustomizedBannerSettingViewController alloc] initWithNibName:@"AvazuCustomizedBannerSettingViewController" bundle:nil];
+            AvazuCustomizedADSettingViewController* customizedBannerViewController = [[AvazuCustomizedADSettingViewController alloc] initWithNibName:@"AvazuCustomizedADSettingViewController" bundle:nil];
+            customizedBannerViewController.isBannerSettings = 1;
             [self.navigationController pushViewController:customizedBannerViewController animated:YES];
         }
 
         else if (indexPath.row == 1) {
-            AvazuSampleDetailLandscapeViewCtroller* detailLandscapeViewController = [[AvazuSampleDetailLandscapeViewCtroller alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            AvazuSampleDetailLandscapeViewCtroller* detailLandscapeViewController = [[AvazuSampleDetailLandscapeViewCtroller alloc] initWithNibName:@"AvazuDetailViewController" bundle:nil];
             detailLandscapeViewController.detailItem = demoCompontent;
             [self.navigationController pushViewController:detailLandscapeViewController animated:YES];
         }
         else {
-            AvazuSampleDetailViewController* detailViewController = [[AvazuSampleDetailViewController alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            AvazuSampleDetailPortraitViewController* detailViewController = [[AvazuSampleDetailPortraitViewController alloc] initWithNibName:@"AvazuDetailViewController" bundle:nil];
             detailViewController.detailItem = demoCompontent;
             [self.navigationController pushViewController:detailViewController animated:YES];
         }
@@ -148,16 +157,17 @@
     else {
         demoCompontent = [_appwallobjects objectAtIndex:indexPath.row];
         if (indexPath.row == 2) {
-            AvazuCustomizedButtonAppWallSettingViewController* customizedButtonAppwallViewController = [[AvazuCustomizedButtonAppWallSettingViewController alloc] initWithNibName:@"AvazuCustomizedButtonAppWallSettingViewController" bundle:nil];
+            AvazuCustomizedADSettingViewController* customizedButtonAppwallViewController = [[AvazuCustomizedADSettingViewController alloc] initWithNibName:@"AvazuCustomizedADSettingViewController" bundle:nil];
+            customizedButtonAppwallViewController.isBannerSettings = 0;
             [self.navigationController pushViewController:customizedButtonAppwallViewController animated:YES];
         }
         else if (indexPath.row == 1) {
-            AvazuSampleDetailLandscapeViewCtroller* detailLandscapeViewController = [[AvazuSampleDetailLandscapeViewCtroller alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            AvazuSampleDetailLandscapeViewCtroller* detailLandscapeViewController = [[AvazuSampleDetailLandscapeViewCtroller alloc] initWithNibName:@"AvazuDetailViewController" bundle:nil];
             detailLandscapeViewController.detailItem = demoCompontent;
             [self.navigationController pushViewController:detailLandscapeViewController animated:YES];
         }
         else {
-            AvazuSampleDetailViewController* detailViewController = [[AvazuSampleDetailViewController alloc] initWithNibName:@"TADetailViewController_iPhone" bundle:nil];
+            AvazuSampleDetailPortraitViewController* detailViewController = [[AvazuSampleDetailPortraitViewController alloc] initWithNibName:@"AvazuDetailViewController" bundle:nil];
             detailViewController.detailItem = demoCompontent;
             [self.navigationController pushViewController:detailViewController animated:YES];
         }
