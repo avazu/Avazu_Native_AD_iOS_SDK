@@ -9,6 +9,7 @@
 #import "AvazuSampleDetailPortraitViewController.h"
 #import "AvazuSampleMasterViewController.h"
 #import "AvazuCustomizedADSettingViewController.h"
+#import "AvazuSampleGetRawdataViewController.h"
 
 
 @interface AvazuSampleMasterViewController ()
@@ -50,7 +51,6 @@
     _bannerobjects = [NSArray arrayWithContentsOfFile:plistPath2];
     
     _appwallobjects = [NSArray arrayWithContentsOfFile:plistPath];
-
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -70,7 +70,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -78,8 +78,11 @@
     if(section == 0){
         return 4;
     }
-    else {
+    else if (section == 1){
         return 3;
+    }
+    else {
+        return 1;
     }
 }
 
@@ -89,10 +92,11 @@
     if(section == 0) {
         return @"Banner Ads";
     }
-    else
+    else if (section == 1)
     {
         return @"Button Ads";
     }
+    else return @"Rawdata";
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section
@@ -124,9 +128,12 @@
             NSDictionary *demoCompontent = [_bannerobjects objectAtIndex:indexPath.row];
             cell.textLabel.text = [demoCompontent objectForKey:@"title"];
     }
-    else {
+    else if (indexPath.section==1){
             NSDictionary *demoCompontent = [_appwallobjects objectAtIndex:indexPath.row];
             cell.textLabel.text = [demoCompontent objectForKey:@"title"];
+    }
+    else {
+            cell.textLabel.text = @"Get Rawdata";
     }
     return cell;
 }
@@ -154,7 +161,7 @@
         }
         
     }
-    else {
+    else if (indexPath.section == 1){
         demoCompontent = [_appwallobjects objectAtIndex:indexPath.row];
         if (indexPath.row == 2) {
             AvazuCustomizedADSettingViewController* customizedButtonAppwallViewController = [[AvazuCustomizedADSettingViewController alloc] initWithNibName:@"AvazuCustomizedADSettingViewController" bundle:nil];
@@ -171,6 +178,10 @@
             detailViewController.detailItem = demoCompontent;
             [self.navigationController pushViewController:detailViewController animated:YES];
         }
+    }
+    else {
+        AvazuSampleGetRawdataViewController* rawDataViewController = [[AvazuSampleGetRawdataViewController alloc] init];
+        [self.navigationController pushViewController:rawDataViewController animated:YES];
     }
 }
 

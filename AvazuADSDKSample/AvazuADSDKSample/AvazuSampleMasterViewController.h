@@ -6,6 +6,7 @@
 
 
 #import <UIKit/UIKit.h>
+#import "AvazuNativeAd.h"
 
 @class AvazuSampleDetailViewController;
 

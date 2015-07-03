@@ -13,7 +13,6 @@
 		484CE2721AC11E29005853B4 /* AvazuCustomizedADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484CE2711AC11E29005853B4 /* AvazuCustomizedADViewController.m */; };
 		484F55CC1AC18B2A009D4802 /* Avazu-Appwalls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484F55C81AC18542009D4802 /* Avazu-Appwalls.plist */; };
 		484F55CD1AC18B2E009D4802 /* Avazu-Banners.plist in Resources */ = {isa = PBXBuildFile; fileRef = 484F55C91AC18542009D4802 /* Avazu-Banners.plist */; };
-		4856549D1AB7FB1500F71876 /* libAvazuAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */; };
 		4856549F1AB807AB00F71876 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4856549E1AB807AB00F71876 /* Launch Screen.xib */; };
 		487F77C81AC2B4DC002EB54B /* AvazuDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F77C61AC2B4DC002EB54B /* AvazuDetailViewController.xib */; };
 		487F77C91AC2B4DC002EB54B /* AvazuMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 487F77C71AC2B4DC002EB54B /* AvazuMasterViewController.xib */; };
@@ -35,6 +34,8 @@
 		48B3E07C1AAEE41B006780ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0761AAEE3AE006780ED /* Foundation.framework */; };
 		48B3E07D1AAEE41D006780ED /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48503BEB1AA843A200C7C48D /* AdSupport.framework */; };
 		48B3E0841AAFF905006780ED /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B3E0831AAFF905006780ED /* CoreTelephony.framework */; };
+		48B97F831B4671330004D6A3 /* AvazuSampleGetRawdataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48B97F821B4671330004D6A3 /* AvazuSampleGetRawdataViewController.m */; };
+		48B97F871B46969C0004D6A3 /* libAvazuAdSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48B97F861B46969C0004D6A3 /* libAvazuAdSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,8 +47,6 @@
 		484CE2711AC11E29005853B4 /* AvazuCustomizedADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuCustomizedADViewController.m; sourceTree = "<group>"; };
 		484F55C81AC18542009D4802 /* Avazu-Appwalls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Avazu-Appwalls.plist"; path = "AvazuADSDKSample/Avazu-Appwalls.plist"; sourceTree = SOURCE_ROOT; };
 		484F55C91AC18542009D4802 /* Avazu-Banners.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Avazu-Banners.plist"; path = "AvazuADSDKSample/Avazu-Banners.plist"; sourceTree = SOURCE_ROOT; };
-		48503BE51AA8087700C7C48D /* AvazuADView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuADView.h; sourceTree = "<group>"; };
-		48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAvazuAdSDK.a; sourceTree = "<group>"; };
 		48503BEB1AA843A200C7C48D /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		4856549E1AB807AB00F71876 /* Launch Screen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen.xib"; sourceTree = "<group>"; };
 		487F77C61AC2B4DC002EB54B /* AvazuDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AvazuDetailViewController.xib; sourceTree = "<group>"; };
@@ -76,6 +75,11 @@
 		48B3E0761AAEE3AE006780ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		48B3E0781AAEE3B7006780ED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		48B3E0831AAFF905006780ED /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		48B97F811B4671330004D6A3 /* AvazuSampleGetRawdataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvazuSampleGetRawdataViewController.h; sourceTree = "<group>"; };
+		48B97F821B4671330004D6A3 /* AvazuSampleGetRawdataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvazuSampleGetRawdataViewController.m; sourceTree = "<group>"; };
+		48B97F861B46969C0004D6A3 /* libAvazuAdSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAvazuAdSDK.a; sourceTree = "<group>"; };
+		48B97F881B4696AB0004D6A3 /* AvazuADView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvazuADView.h; sourceTree = "<group>"; };
+		48B97F891B4696AB0004D6A3 /* AvazuNativeAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AvazuNativeAd.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +87,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4856549D1AB7FB1500F71876 /* libAvazuAdSDK.a in Frameworks */,
 				48B3E0841AAFF905006780ED /* CoreTelephony.framework in Frameworks */,
 				48B3E07B1AAEE419006780ED /* UIKit.framework in Frameworks */,
 				48B3E07C1AAEE41B006780ED /* Foundation.framework in Frameworks */,
 				48B3E07D1AAEE41D006780ED /* AdSupport.framework in Frameworks */,
+				48B97F871B46969C0004D6A3 /* libAvazuAdSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +111,8 @@
 		48503BE31AA8087700C7C48D /* include */ = {
 			isa = PBXGroup;
 			children = (
-				48503BE51AA8087700C7C48D /* AvazuADView.h */,
+				48B97F881B4696AB0004D6A3 /* AvazuADView.h */,
+				48B97F891B4696AB0004D6A3 /* AvazuNativeAd.h */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -115,7 +120,7 @@
 		48503BE71AA8087700C7C48D /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				48503BE81AA8087700C7C48D /* libAvazuAdSDK.a */,
+				48B97F861B46969C0004D6A3 /* libAvazuAdSDK.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -137,6 +142,8 @@
 				484CE2711AC11E29005853B4 /* AvazuCustomizedADViewController.m */,
 				48886B8B1ABFE466002B39FB /* UINavigationController + Avazu.h */,
 				48886B8C1ABFE466002B39FB /* UINavigationController + Avazu.m */,
+				48B97F811B4671330004D6A3 /* AvazuSampleGetRawdataViewController.h */,
+				48B97F821B4671330004D6A3 /* AvazuSampleGetRawdataViewController.m */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -300,6 +307,7 @@
 				48886B831ABF1CE6002B39FB /* AvazuCustomizedADSettingViewController.m in Sources */,
 				484CE26D1ABFFE3B005853B4 /* AvazuSampleDetailLandscapeViewCtroller.m in Sources */,
 				4890B9361AA6F92C000304DA /* AvazuSampleDetailPortraitViewController.m in Sources */,
+				48B97F831B4671330004D6A3 /* AvazuSampleGetRawdataViewController.m in Sources */,
 				4890B9481AA6FBCA000304DA /* AppDelegate.m in Sources */,
 				4890B9371AA6F92C000304DA /* AvazuSampleMasterViewController.m in Sources */,
 			);
@@ -345,6 +353,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
@@ -380,6 +389,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
