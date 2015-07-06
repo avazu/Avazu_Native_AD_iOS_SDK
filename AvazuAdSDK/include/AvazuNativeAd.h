@@ -23,5 +23,7 @@
 
 - (void)loadNativeAdWithSourceId: (NSString *) sourceId
                  excludePackages: (NSString *) excludePackages
-                     limitNumber: (int) limitNumber;
+                     limitNumber: (int) limitNumber
+                          incent: (int) incent
+                       creatives: (int) creatives;
 @end

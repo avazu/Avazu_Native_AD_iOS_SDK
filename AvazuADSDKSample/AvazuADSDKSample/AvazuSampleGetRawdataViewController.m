@@ -27,7 +27,10 @@
     self.nativdAd.delegate = self;
     [self.nativdAd loadNativeAdWithSourceId: @"15353"
                             excludePackages: @""
-                                limitNumber: 10];
+                                limitNumber: 10
+                                     incent: 0
+                                  creatives: 1
+     ];
     
     //and so on adjust your view size according to your needs
 }
