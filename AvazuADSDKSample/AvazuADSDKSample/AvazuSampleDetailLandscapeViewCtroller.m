@@ -53,7 +53,7 @@
             self.title = [self.detailItem objectForKey:@"title"];
             adView = [[AvazuADView alloc] initWithFrame:adFrame
                                                  adType:AVAZU_TRANSPARENT_SINGLE_BANNER
-                                               sourceID:@"6395"];
+                                               sourceID:@"15587"];
             adView.isNeedSize = 0;
             adView.isDebug = 1;
             adView.delegate = self;
@@ -81,7 +81,7 @@
             self.title = [self.detailItem objectForKey:@"title"];
             adView = [[AvazuADView alloc] initWithFrame:adFrame
                                                  adType:AVAZU_MULTIPLE_BUTTON_APP_WALL
-                                               sourceID:@"6395"];
+                                               sourceID:@"15587"];
             adView.appCount = 6;
             adView.delegate = self;
             adView.isNeedReviewNumber = 0;

@@ -60,7 +60,7 @@
             self.title = [self.detailItem objectForKey:@"title"];
             adView = [[AvazuADView alloc] initWithFrame:adFrame
                                                  adType:AVAZU_SINGLE_BANNER
-                                               sourceID:@"6395"];
+                                               sourceID:@"15587"];
             adView.delegate = self;
             [adView loadAD];
             if(![self.view.subviews containsObject:adView]){
@@ -95,7 +95,7 @@
             self.title = [self.detailItem objectForKey:@"title"];
             adView = [[AvazuADView alloc] initWithFrame:adFrame
                                                  adType:AVAZU_BANNER_APPWALL
-                                               sourceID:@"6395"];
+                                               sourceID:@"15587"];
             adView.appCount = 2;
             adView.delegate = self;
             [adView loadAD];
@@ -130,7 +130,7 @@
             self.title = [self.detailItem objectForKey:@"title"];
             adView = [[AvazuADView alloc] initWithFrame:adFrame
                                                  adType:AVAZU_SINGLE_BUTTON_APP_WALL
-                                               sourceID:@"6395"];
+                                               sourceID:@"15587"];
             //setting app count and customize adview
             adView.appCount = 6;
             adView.isNeedReviewNumber = 0;

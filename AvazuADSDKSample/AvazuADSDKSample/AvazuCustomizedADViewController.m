@@ -40,7 +40,7 @@
 
     adView = [[AvazuADView alloc] initWithFrame:CGRectMake((screenWidth - adViewWidth)/2, 66, adViewWidth, adViewHeight)
                                          adType:self.adType
-                                       sourceID:@"6395"];
+                                       sourceID:@"15587"];
 
     adView.appCount            = [[self.adviewSettings objectForKey:@"appCount" ] intValue];
 
